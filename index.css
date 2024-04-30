@@ -1,44 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-nav{
+
+nav {
     background-color: #1A223E;
     color: white;
 }
+
 nav ul {
     width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    height: 5rem;
+    height: 8vh;
     align-items: center;
 }
+
 nav ul a {
     font-size: 1.3rem;
     color: white;
     text-decoration: none;
     text-align: center;
+    position: relative;
 }
+
+nav ul a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background-color: #6CA5E9;
+    transition: transform 0.25s ease-out;
+    border-radius: 1rem;
+}
+
+nav ul a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom middle;
+}
+
+
 #diegoHidalgo {
     display: flex;
-    margin-right: 40rem;
+    margin-right: 20%;
     font-size: 2rem;
 }
-#diego{
+
+#diego {
     margin-right: .5rem;
 }
-#hidalgo{
+
+#hidalgo {
     color: #6CA5E9;
 }
-#ContactMeButton{
+
+#ContactMeButton {
     background-color: #6CA5E9;
     padding: .7rem;
     border-radius: 1rem;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 92vh;
+    /* idk */
+}
+header article {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+#headerLeft{
+    width: 60%;
+}
+#headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+#homeHeader{
+    font-size: 7rem;
+    color: #1A223E;
+}
+#hey {
+    font-size: 2rem;
+    color: #1A223E;
+}
+main {
+    background-color: red;
 }
