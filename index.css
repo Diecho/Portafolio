@@ -119,7 +119,7 @@ header.home article {
 }
 header.home a {
     margin-top: 2rem;
-    padding: 2rem 4rem;
+    padding: 1.5rem 3rem;
     background-color: #5C6FB4 ;
     border-radius: 2rem;
     text-decoration: none;
@@ -134,8 +134,23 @@ h2 {
 main>section {
     width: 1424px;
     margin: auto;
-    overflow: hidden;
+    animation: slideToLeft ease;
+    animation-timeline: view();
+    animation-range: cover contain;
+    /* change animation */
 }
+@keyframes slideToLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 #carousell {
     display: flex;
     width: 200%;
@@ -174,6 +189,13 @@ article.blockOfCarousell p {
     flex-grow: 1;
     margin-top: 1rem;
 }
+#skillsSocial {
+    margin-top: 10rem;
+    margin-bottom: 9rem;
+    /* for pixel perfection needs to be 9rem */
+    display: flex;
+    flex-flow: row wrap;
+}
 #skill {
     width: 50%;
 }
@@ -201,6 +223,78 @@ div.skillBlock img{
 div.skillBlock p{
     font-size: 1.5rem;
 }
+#social{
+    width: 50%;
+}
+#socials {
+    display: flex;
+    flex-flow: wrap;
+}
+#social a {
+    display: flex;
+    height: 60px;
+    padding: .5rem 2rem;
+    align-items: center;
+    border: #6CA5E9 2px solid;
+    background-color: #6CA5E9;
+    box-shadow: 0 0 4px black;
+    width: fit-content;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#social img{
+    height: 80%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+#mailArticle {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+#mailArticle p {
+    display: flex;
+    height: 75px;
+    padding: .5rem 5rem;
+    align-items: center;
+    border: #6CA5E9 2px solid;
+    box-shadow: 0 0 4px black;
+    width: fit-content;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+#mailArticle a {
+    height: 75px;
+    border: 1px black solid;
+    background-color: #6CA5E9;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin-left: min(2rem);
+    justify-self: flex-start;
+
+}
+#mailArticle a img {
+    height: 100%;
+    object-fit: cover;
+}
+#mailArticle #resumeContact {
+    max-width: 30rem;
+    flex-grow: 1;
+    margin-left: 5rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #5C6FB4;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+
 /* for home header for less size desktops */
 @media screen and (max-width: 1624px) {
     header.home article {
@@ -210,7 +304,9 @@ div.skillBlock p{
         font-size: 5.8rem;
         color: #1A223E;
     }
-    header.home a {
-        padding: 1.5rem 3rem;
+
+    main>section {
+        width: 1124px;
     }
+
 }
