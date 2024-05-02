@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 * {
@@ -16,6 +16,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* position: sticky;
+    top: 0;
+    z-index: 10; */
 }
 
 nav ul {
@@ -126,7 +129,7 @@ header.home a {
     color: white;
     font-size: 1.5rem;
 }
-h2 {
+main section>h2 {
     font-size: 3rem;
     font-weight: 500;
     padding: 2rem 0;
@@ -150,7 +153,9 @@ main>section {
 		transform: translateX(0);
 	}
 }
-
+#myProjects {
+    overflow: hidden;
+}
 #carousell {
     display: flex;
     width: 200%;
@@ -209,7 +214,8 @@ div.skillBlock {
     padding: .5rem 2rem;
     align-items: center;
     border: #6CA5E9 2px solid;
-    box-shadow: 0 0 4px black;
+    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
+    /* remeber to change box shadow  */
     width: fit-content;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -237,7 +243,7 @@ div.skillBlock p{
     align-items: center;
     border: #6CA5E9 2px solid;
     background-color: #6CA5E9;
-    box-shadow: 0 0 4px black;
+    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
     width: fit-content;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -262,7 +268,7 @@ div.skillBlock p{
     padding: .5rem 5rem;
     align-items: center;
     border: #6CA5E9 2px solid;
-    box-shadow: 0 0 4px black;
+    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
     width: fit-content;
     border-radius: 1rem;
     font-size: 1.5rem;
@@ -275,10 +281,14 @@ div.skillBlock p{
     padding: 0 1rem;
     margin-left: min(2rem);
     justify-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
 
 }
 #mailArticle a img {
-    height: 100%;
+    height: 70%;
     object-fit: cover;
 }
 #mailArticle #resumeContact {
@@ -293,6 +303,126 @@ div.skillBlock p{
     justify-content: center;
     font-size: 1.3rem;
 }
+#mailSection {
+    margin-bottom: 10rem;
+}
+div.empty {
+    flex-grow: 10;
+
+}
+footer {
+    background-color: black;
+    height: 280px;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    padding: 3rem;
+}
+footer article{
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+}
+#leftFooter {
+    width: 70%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+footer h2 {
+    font-weight: 400;
+    width: 100%;
+}
+footer a {
+    width: 70px;
+    margin-right: 1rem;
+}
+footer img {
+    height: 50px;
+}
+footer hr {
+    margin-top: 3rem;
+    width: 100%;
+    display: block;
+    height: 1px;
+}
+footer>p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+/* resume css */
+
+#resume {
+    height: 1100px;
+    width: 850px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+#resume * {
+    font-family: "Lato", sans-serif;
+}
+#resumeHeader {
+    background-color: #79A5DF;
+    padding: 4rem;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 3rem;
+}
+#resumeHeader img{
+    position: absolute;
+    right: 4rem;
+    border-radius: 50%;
+    top: 80px;
+}
+#resumeHeader h2{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+#resumeHeader p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+#resumeMain {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem 4rem;
+}
+.resumeLeft {
+    width: 40%;
+    padding: 1rem 1rem 1rem 0;
+    border-right: 2px #464A4E solid;
+}
+/* fix padding since border */
+.resumeRight {
+    width: 60%;
+    padding: 1rem 0 1rem 1rem;
+}
+#resumeMain h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 700;
+}
+#resumeSocial, #resumeProfile, #resumeSkills, #resumeExperience {
+    border-bottom: 2px solid #464A4E;
+}
+#resumeMain p {
+    margin-top: 1rem;
+    /* letter-spacing: 1px; */
+    /* font-weight: 400; */
+    line-height: 1.6;
+    color: #706F6F;
+
+}
+ul {list-style-position: inside;}
 
 
 /* for home header for less size desktops */
@@ -309,4 +439,43 @@ div.skillBlock p{
         width: 1124px;
     }
 
+}
+@media screen and (max-width: 1200px) {
+    header.home article {
+        width: 924px;
+    }
+    #homeHeader{
+        font-size: 5.8rem;
+    }
+
+    main>section {
+        width: 924px;
+    }
+    #mailArticle a {
+        margin-left: 1rem;
+    }
+    nav ul a.homeNav{
+        font-size: 1rem;
+    }
+    #diegoHidalgo{
+        margin-right: 12%;
+    }
+    #homeHeader{
+        font-size: 4rem;
+    }
+    #hey {
+        font-size: 1.5rem;
+    }
+    div.empty {
+        display: none;
+    }
+    #mailArticle #resumeContact {
+        margin-left: 1rem;
+    }
+    article.blockOfCarousell {
+        width: 450px;
+    }
+    #carousell {
+        width: 250%;
+    }
 }
