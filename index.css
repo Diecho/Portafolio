@@ -116,6 +116,9 @@ header.home article {
     font-size: 7rem;
     color: #1A223E;
 }
+#homeHeader::after {
+    content: none;
+}
 #hey {
     font-size: 2rem;
     color: #1A223E;
@@ -130,9 +133,10 @@ header.home a {
     font-size: 1.5rem;
 }
 main section>h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
-    padding: 2rem 0;
+    margin: 2rem 0;
+    width: 100%;
 }
 main>section {
     width: 1424px;
@@ -359,6 +363,19 @@ h1 {
     margin: 2rem 0;
     text-align: center;
     font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1::after {
+    content: "";
+    display: block;
+    width: 124px;
+    height: 5px;
+    background-color: #4875B4;
+    border-radius: 1rem;
 }
 
 
@@ -489,6 +506,32 @@ article.resumeRight .resumeBlock{
 #resumeSkills, #resumeLearning {
     position: relative;
 }
+#seePDF {
+    padding: 1rem 3rem;
+    background-color: #5C6FB4;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    display: block;
+    width: 300px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+/* about me css */
+
+#whoAmI{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#whoAmIText{
+    width: 70%;
+}
+#whoAmIImg{
+    width: 30%;
+}
 
 /* for home header for less size desktops */
 @media screen and (max-width: 1624px) {
@@ -520,10 +563,10 @@ article.resumeRight .resumeBlock{
         margin-left: 1rem;
     }
     nav ul a.homeNav{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     #diegoHidalgo{
-        margin-right: 12%;
+        margin-right: 10%;
     }
     #homeHeader{
         font-size: 4rem;
@@ -542,5 +585,9 @@ article.resumeRight .resumeBlock{
     }
     #carousell {
         width: 250%;
+    }
+    #ContactMeButton {
+        padding: 0.5rem;
+        font-size: 1.1rem;
     }
 }
