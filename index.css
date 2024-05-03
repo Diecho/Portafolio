@@ -137,9 +137,9 @@ main section>h2 {
 main>section {
     width: 1424px;
     margin: auto;
-    animation: slideToLeft ease;
+    /* animation: slideToLeft ease;
     animation-timeline: view();
-    animation-range: cover contain;
+    animation-range: cover contain; */
     /* change animation */
 }
 @keyframes slideToLeft {
@@ -277,6 +277,7 @@ div.skillBlock p{
     height: 75px;
     border: 1px black solid;
     background-color: #6CA5E9;
+    border: #6CA5E9 2px solid;
     border-radius: 1rem;
     padding: 0 1rem;
     margin-left: min(2rem);
@@ -300,6 +301,7 @@ div.skillBlock p{
     display: flex;
     align-items: center;
     background-color: #5C6FB4;
+    border-color: #5C6FB4;
     justify-content: center;
     font-size: 1.3rem;
 }
@@ -353,15 +355,26 @@ footer>p{
     text-align: center;
     width: 100%;
 }
+h1 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
 
 /* resume css */
 
 #resume {
-    height: 1100px;
-    width: 850px;
+    height: calc(1100px*1.1);
+    height: auto;
+    width: calc(850px *1.1);
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
+    border: black 1px solid;
+    padding: 2rem;
+    margin-bottom: 4rem;
 }
 #resume * {
     font-family: "Lato", sans-serif;
@@ -389,41 +402,93 @@ footer>p{
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 7px;
+    margin-left: 3px;
 }
 #resumeMain {
     display: flex;
     flex-flow: row wrap;
     padding: 2rem 4rem;
 }
+#resumeMain img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
 .resumeLeft {
     width: 40%;
-    padding: 1rem 1rem 1rem 0;
     border-right: 2px #464A4E solid;
 }
-/* fix padding since border */
 .resumeRight {
     width: 60%;
-    padding: 1rem 0 1rem 1rem;
 }
 #resumeMain h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 7px;
+    margin-bottom: 1rem;
     font-weight: 700;
+}
+#resumeMain h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: .25rem 0;
+}
+#resumeMain ul {
+    margin: 1rem 0;
+    color: #706F6F;
+    list-style-position: inside;
+}
+#resumeSocial p {
+    display: flex;
+    align-items: center;
 }
 #resumeSocial, #resumeProfile, #resumeSkills, #resumeExperience {
     border-bottom: 2px solid #464A4E;
 }
+article.resumeLeft .resumeBlock{
+    padding: 1rem 2rem 1rem 0;
+}
+article.resumeRight .resumeBlock{
+    padding: 1rem 0 1rem 2rem;
+}article.resumeBlock.resumeRight {
+    padding: 1rem 0 1rem 2rem;
+}
+#resumeSocial {
+    padding: 1rem 2rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #resumeMain p {
-    margin-top: 1rem;
     /* letter-spacing: 1px; */
     /* font-weight: 400; */
     line-height: 1.6;
     color: #706F6F;
 
 }
-ul {list-style-position: inside;}
-
+.circleIcon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px #464A4E solid;
+    position: absolute;
+    background-color: white;
+    right: -9px;
+    bottom: -9px;
+}
+.topRight {
+    top: -9px;
+}
+.topLeft {
+    top: -9px;
+    left: -9px;
+}
+#resumeSkills, #resumeLearning {
+    position: relative;
+}
 
 /* for home header for less size desktops */
 @media screen and (max-width: 1624px) {
