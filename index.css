@@ -78,6 +78,40 @@ nav ul a:hover::after {
     text-align: center;
     color: white;
 }
+#ContactMeButton:hover {
+    background-color: #3376c8;
+}
+.skillBlock {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    
+    span {
+      z-index: 20;
+    }
+    
+    &:after {
+      background: #535353;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+  }
+  .skillBlock:hover {
+  
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }      
+
 header.home {
     display: flex;
     flex-flow: column;
@@ -603,7 +637,7 @@ article.resumeRight .resumeBlock{
 #whatIdo {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 .whatIdoBlock {
     display: flex;
@@ -625,7 +659,7 @@ article.resumeRight .resumeBlock{
     width: 100%;
     background-color: black;
     color: white;
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
 }
@@ -776,6 +810,146 @@ body.contact {
     align-self: flex-end;
     
 }
+article.work {
+    display: flex;
+    margin-bottom: 6rem;
+}
+article.work>img {
+    width: 50%;
+}
+.rightWork {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+body.blackTheme {
+    background-color: #1A223E;
+    color: white;
+}
+body.blackTheme nav {
+    background-color: white;
+}
+body.blackTheme nav a{
+    color: black;
+}
+body.blackTheme #diego {
+    color: black;
+}
+.rightWork {
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.rightWork h3 {
+    font-size: 3rem;
+    color: #79A5DF;
+    margin-bottom: 1rem;
+}
+.rightWork p {
+    font-size: 1.4rem;
+}
+.linkWork {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkWork {
+    display: flex;
+}
+.linkWork a{
+    display: flex;
+    align-items: center;
+}
+
+.linkWork a:nth-child(1){
+    width: 200px;
+    height: 70px;
+    background-color: #4875B4;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 45%;
+}
+
+.linkWork a img{
+    height: 70px;
+}
+.writtenWork {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.writtenWork article {
+    width: 45%;
+}
+.writtenWork h3 {
+    font-size: 1.8rem;
+    color: #79A5DF;
+    height: 100px;
+}
+.writtenWork p {
+    height: 130px;
+    font-size: 1.3rem;
+}
+
+.writtenWork a{
+    background-color: #4875B4;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+#workBlock {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+#workBlock img, #workBlock p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+#workBlock div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+#workBlock div a{
+    width: 200px;
+    padding: .8rem 1rem;
+    margin-right: 1rem;
+    background-color: #4875B4;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+#workBlock div a img{
+    height: 32px;
+    width: 32px;
+    margin: 0;
+    margin-right: 1rem;
+}
 
 /* add hovers for all buttons and things */
 
@@ -807,9 +981,30 @@ body.contact {
     #webPartner h2 {
         font-size: 2.5rem;
     }
-    
+    .rightWork p {
+        font-size: 1.2rem;
+    }
+    .rightWork h3 {
+        font-size: 2.4rem;
+    }
+    .linkWork a:nth-child(1) {
+        margin-right: 30%;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    .linkWork a img{
+        height: 50px;
+    }
+    .writtenWork h3 {
+        font-size: 1.8rem;
+        height: 100px;
+    }
+    .writtenWork p {
+        height: 100px;
+        font-size: 1rem;
+    }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     header.home article {
         width: 924px;
     }
@@ -873,5 +1068,25 @@ body.contact {
     }
     #interestedInWork div a{
         font-size: 1.3rem;
+    }
+    .rightWork p {
+        font-size: .9rem;
+    }
+    .rightWork h3 {
+        font-size: 2rem;
+    }
+    .linkWork a:nth-child(1) {
+        margin-right: 15%;
+    }
+    .linkWork{
+        margin-top: 1rem;
+    }
+    .writtenWork h3 {
+        font-size: 1.6rem;
+        height: 100px;
+    }
+    .writtenWork p {
+        height: 100px;
+        font-size: 1rem;
     }
 }    
