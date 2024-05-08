@@ -55,6 +55,7 @@ nav ul a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom middle;
 }
+
 #diegoHidalgo {
     display: flex;
     margin-right: 20%;
@@ -78,39 +79,42 @@ nav ul a:hover::after {
     text-align: center;
     color: white;
 }
+
 #ContactMeButton:hover {
     background-color: #3376c8;
 }
+
 .skillBlock {
     border: 1px solid;
     overflow: hidden;
     position: relative;
-    
+
     span {
-      z-index: 20;
+        z-index: 20;
     }
-    
+
     &:after {
-      background: #535353;
-      content: "";
-      height: 155px;
-      left: -75px;
-      opacity: .2;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
-      z-index: -10;
+        background: #535353;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: -10;
     }
-  }
-  .skillBlock:hover {
-  
+}
+
+.skillBlock:hover {
+
     &:after {
-      left: 120%;
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
-  }      
+}
 
 header.home {
     display: flex;
@@ -121,13 +125,15 @@ header.home {
     height: 92vh;
     /* idk */
 }
+
 header.home article {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 1424px;
 }
-#headerLeft{
+
+#headerLeft {
     width: 60%;
     display: flex;
     flex-flow: column;
@@ -136,43 +142,59 @@ header.home article {
     align-items: flex-start;
 
 }
+
 #headerRight {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 40%;
 }
-#headerRight img{
+
+#headerRight img {
     height: 100%;
     border-radius: 50%;
 }
-#homeHeader{
+
+#homeHeader {
     font-size: 7rem;
     color: #1A223E;
 }
+
 #homeHeader::after {
     content: none;
 }
+
 #hey {
     font-size: 2rem;
     color: #1A223E;
 }
+
 header.home a {
     margin-top: 2rem;
     padding: 1.5rem 3rem;
-    background-color: #5C6FB4 ;
+    background-color: #5C6FB4;
     border-radius: 2rem;
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+    border: #5C6FB4 3px solid;
 }
+
+header.home a:hover {
+    background-color: white;
+    color: #5C6FB4;
+    border: #5C6FB4 3px solid;
+}
+
 main section>h2 {
     font-size: 2.5rem;
     font-weight: 500;
     margin: 2rem 0;
     width: 100%;
 }
-main>section, #webPartner {
+
+main>section,
+#webPartner {
     width: 1424px;
     margin: auto;
     /* animation: slideToLeft ease;
@@ -180,25 +202,29 @@ main>section, #webPartner {
     animation-range: cover contain; */
     /* change animation */
 }
-@keyframes slideToLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+@keyframes slideToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
+
 #myProjects {
     overflow: hidden;
 }
+
 #carousell {
     display: flex;
     width: 200%;
     justify-content: space-between;
 }
+
 article.blockOfCarousell {
     width: 540px;
     background-color: #1A223E;
@@ -211,27 +237,40 @@ article.blockOfCarousell {
     justify-content: space-between;
     align-items: flex-start;
 }
-article.blockOfCarousell h3{
+
+article.blockOfCarousell h3 {
     margin-top: 1rem;
     font-size: 1.5rem;
     color: #6CA5E9;
 }
+
 article.blockOfCarousell a {
-    padding: 1rem 2rem;
+    padding: .8rem 2rem;
     background-color: #5C6FB4;
     border-radius: 1rem;
     text-decoration: none;
     font-size: 1.3rem;
     color: white;
+    border: #5C6FB4 3px solid;
 }
+
+article.blockOfCarousell a:hover {
+    background-color: white;
+    color: #5C6FB4;
+    border: #5C6FB4 3px solid;
+
+}
+
 article.blockOfCarousell img {
     width: 100%;
     object-fit: cover;
 }
+
 article.blockOfCarousell p {
     flex-grow: 1;
     margin-top: 1rem;
 }
+
 #skillsSocial {
     margin-top: 10rem;
     margin-bottom: 9rem;
@@ -239,41 +278,49 @@ article.blockOfCarousell p {
     display: flex;
     flex-flow: row wrap;
 }
+
 #skill {
     width: 50%;
 }
+
 #skills {
     display: flex;
     flex-flow: wrap;
 }
+
 div.skillBlock {
     display: flex;
     height: 60px;
     padding: .5rem 2rem;
     align-items: center;
     border: #6CA5E9 2px solid;
-    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
     /* remeber to change box shadow  */
     width: fit-content;
     border-radius: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
-div.skillBlock img{
+
+div.skillBlock img {
     height: 80%;
     object-fit: cover;
     margin-right: 1rem;
 }
-div.skillBlock p{
+
+div.skillBlock p {
     font-size: 1.5rem;
 }
-#social{
+
+#social {
     width: 50%;
 }
+
 #socials {
     display: flex;
     flex-flow: wrap;
 }
+
 #social a {
     display: flex;
     height: 60px;
@@ -281,7 +328,7 @@ div.skillBlock p{
     align-items: center;
     border: #6CA5E9 2px solid;
     background-color: #6CA5E9;
-    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
     width: fit-content;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -290,27 +337,34 @@ div.skillBlock p{
     text-decoration: none;
     font-size: 1.5rem;
 }
-#social img{
+#social a:hover {
+    background-color: #337fdc;
+    border: #337fdc 2px solid;
+}
+#social img {
     height: 80%;
     object-fit: cover;
     margin-right: 1rem;
 }
+
 #mailArticle {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
 }
+
 #mailArticle p {
     display: flex;
     height: 75px;
     padding: .5rem 5rem;
     align-items: center;
     border: #6CA5E9 2px solid;
-    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
     width: fit-content;
     border-radius: 1rem;
     font-size: 1.5rem;
 }
+
 #mailArticle a {
     height: 75px;
     border: 1px black solid;
@@ -323,13 +377,18 @@ div.skillBlock p{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
 
+}
+#mailArticle a:hover{
+    background-color: #3d82d6;
+    border: #3d82d6 2px solid;
 }
 #mailArticle a img {
     height: 70%;
     object-fit: cover;
 }
+
 #mailArticle #resumeContact {
     max-width: 30rem;
     flex-grow: 1;
@@ -342,14 +401,25 @@ div.skillBlock p{
     border-color: #5C6FB4;
     justify-content: center;
     font-size: 1.3rem;
+    border: #5C6FB4 3px solid;
 }
+
+#mailArticle #resumeContact:hover {
+    background-color: white;
+    color: #5C6FB4;
+    border: #5C6FB4 3px solid;
+
+}
+
 #mailSection {
     margin-bottom: 10rem;
 }
+
 div.empty {
     flex-grow: 10;
 
 }
+
 footer {
     background-color: black;
     height: 280px;
@@ -358,27 +428,35 @@ footer {
     color: white;
     padding: 3rem;
 }
-footer article{
+
+footer article {
     width: 30%;
     display: flex;
     flex-flow: row wrap;
     height: 80px;
 }
+
 #leftFooter {
     width: 70%;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
+
 footer h2 {
     font-weight: 400;
     width: 100%;
 }
+
 footer a {
     width: 70px;
     margin-right: 1rem;
 }
+
 footer img {
     height: 50px;
+}
+footer img:hover {
+    scale: 120%;
 }
 footer hr {
     margin-top: 3rem;
@@ -386,13 +464,15 @@ footer hr {
     display: block;
     height: 1px;
 }
-footer>p{
+
+footer>p {
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
     width: 100%;
 }
+
 h1 {
     margin-top: 2.5rem;
     text-align: center;
@@ -401,8 +481,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 h1::after {
     content: "";
     display: block;
@@ -428,9 +509,11 @@ h1::after {
     margin-bottom: 4rem;
     margin-top: 2.5rem;
 }
+
 #resume * {
     font-family: "Lato", sans-serif;
 }
+
 #resumeHeader {
     background-color: #79A5DF;
     padding: 4rem;
@@ -439,40 +522,48 @@ h1::after {
     height: 200px;
     margin-bottom: 3rem;
 }
-#resumeHeader img{
+
+#resumeHeader img {
     position: absolute;
     right: 4rem;
     border-radius: 50%;
     top: 80px;
 }
-#resumeHeader h2{
+
+#resumeHeader h2 {
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: 7px;
 }
-#resumeHeader p{
+
+#resumeHeader p {
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 7px;
     margin-left: 3px;
 }
+
 #resumeMain {
     display: flex;
     flex-flow: row wrap;
     padding: 2rem 4rem;
 }
+
 #resumeMain img {
     height: 20px;
     width: 20px;
     margin-right: 10px;
 }
+
 .resumeLeft {
     width: 40%;
     border-right: 2px #464A4E solid;
 }
+
 .resumeRight {
     width: 60%;
 }
+
 #resumeMain h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -480,6 +571,7 @@ h1::after {
     margin-bottom: 1rem;
     font-weight: 700;
 }
+
 #resumeMain h4 {
     font-size: 1rem;
     text-transform: uppercase;
@@ -487,32 +579,44 @@ h1::after {
     font-weight: 600;
     margin: .25rem 0;
 }
+
 #resumeMain ul {
     margin: 1rem 0;
     color: #706F6F;
     list-style-position: inside;
 }
+
 #resumeSocial p {
     display: flex;
     align-items: center;
 }
-#resumeSocial, #resumeProfile, #resumeSkills, #resumeExperience {
+
+#resumeSocial,
+#resumeProfile,
+#resumeSkills,
+#resumeExperience {
     border-bottom: 2px solid #464A4E;
 }
-article.resumeLeft .resumeBlock{
+
+article.resumeLeft .resumeBlock {
     padding: 1rem 2rem 1rem 0;
 }
-article.resumeRight .resumeBlock{
-    padding: 1rem 0 1rem 2rem;
-}article.resumeBlock.resumeRight {
+
+article.resumeRight .resumeBlock {
     padding: 1rem 0 1rem 2rem;
 }
+
+article.resumeBlock.resumeRight {
+    padding: 1rem 0 1rem 2rem;
+}
+
 #resumeSocial {
     padding: 1rem 2rem 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 #resumeMain p {
     /* letter-spacing: 1px; */
     /* font-weight: 400; */
@@ -520,6 +624,7 @@ article.resumeRight .resumeBlock{
     color: #706F6F;
 
 }
+
 .circleIcon {
     display: block;
     width: 16px;
@@ -531,16 +636,21 @@ article.resumeRight .resumeBlock{
     right: -9px;
     bottom: -9px;
 }
+
 .topRight {
     top: -9px;
 }
+
 .topLeft {
     top: -9px;
     left: -9px;
 }
-#resumeSkills, #resumeLearning {
+
+#resumeSkills,
+#resumeLearning {
     position: relative;
 }
+
 #seePDF {
     padding: 1rem 3rem;
     background-color: #5C6FB4;
@@ -552,35 +662,46 @@ article.resumeRight .resumeBlock{
     width: 300px;
     margin: 4rem auto;
     text-align: center;
+    border: #5C6FB4 3px solid;
 }
-
+#seePDF:hover{
+    background-color: white;
+    color: #5C6FB4;
+    border: #5C6FB4 3px solid;
+}
 /* about me css */
 
-#whoAmI{
+#whoAmI {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-#whoAmIText{
+
+#whoAmIText {
     width: 50%;
 }
-#whoAmIImg{
+
+#whoAmIImg {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-#whoAmIText p{
+
+#whoAmIText p {
     margin-bottom: 2rem;
 }
-#whoAmIImg img{
+
+#whoAmIImg img {
     height: 100%;
     margin-left: 2rem;
 }
+
 #whoAmILinks {
     margin: 2rem auto;
     display: flex;
 }
+
 #whoAmILinks a {
     display: block;
     padding: 1rem 2rem;
@@ -592,18 +713,21 @@ article.resumeRight .resumeBlock{
     color: white;
     text-decoration: none;
 }
-#whoAmILinks a:nth-child(1){
+
+#whoAmILinks a:nth-child(1) {
     margin-right: 1rem;
     background-color: #ffffff;
     color: #5C6FB4;
     border: #5C6FB4 2px solid;
 }
+
 #whoAmILinks a:hover {
     background-color: #ffffff;
     color: #5C6FB4;
     border: #5C6FB4 2px solid;
 }
-#whoAmILinks a:nth-child(1):hover{
+
+#whoAmILinks a:nth-child(1):hover {
     background-color: #5C6FB4;
     color: white;
 }
@@ -614,6 +738,7 @@ article.resumeRight .resumeBlock{
     justify-content: space-between;
     margin-bottom: 2rem;
 }
+
 #myHobbies article {
     width: 50%;
     height: auto;
@@ -623,38 +748,47 @@ article.resumeRight .resumeBlock{
     align-items: center;
     margin-bottom: 2rem;
 }
+
 #myHobbies article img {
     width: 100px;
 }
+
 #myHobbies article h3 {
     font-size: 1.8rem;
     font-weight: 500;
     margin: .5rem 0;
 }
+
 #myHobbies article p {
     width: 50%;
 }
+
 #whatIdo {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 10rem;
 }
+
 .whatIdoBlock {
     display: flex;
     flex-flow: column;
     align-items: center;
     width: 50%;
 }
-.whatIdoBlock img{
+
+.whatIdoBlock img {
     width: 100px;
 }
-.whatIdoBlock h3{
+
+.whatIdoBlock h3 {
     font-size: 1.2rem;
     margin-bottom: .5rem;
 }
-.whatIdoBlock p{
+
+.whatIdoBlock p {
     color: #464A4E;
 }
+
 .blackFold {
     width: 100%;
     background-color: black;
@@ -663,6 +797,7 @@ article.resumeRight .resumeBlock{
     display: flex;
     flex-direction: column;
 }
+
 #webPartner h2 {
     padding: 2rem 0;
     margin: 0;
@@ -670,29 +805,35 @@ article.resumeRight .resumeBlock{
     font-weight: 400;
     text-align: center;
 }
+
 #Background {
-    background: rgb(61,91,125);
-    background: linear-gradient(90deg, rgba(61,91,125,1) 0%, rgba(54,84,120,1) 16%, rgba(34,61,94,1) 40%, rgba(15,40,70,1) 78%);
+    background: rgb(61, 91, 125);
+    background: linear-gradient(90deg, rgba(61, 91, 125, 1) 0%, rgba(54, 84, 120, 1) 16%, rgba(34, 61, 94, 1) 40%, rgba(15, 40, 70, 1) 78%);
     display: flex;
     flex-flow: row wrap;
     border-radius: 1rem;
 }
-#webBlock{
+
+#webBlock {
     width: 100%;
     display: flex;
-    
+
 }
-#blocks, #webIdealWork {
+
+#blocks,
+#webIdealWork {
     width: 50%;
     padding: 2rem;
-    aspect-ratio: 1 / 1 ;
+    aspect-ratio: 1 / 1;
 }
+
 #blocks {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
 }
+
 .fourBloks {
     border-radius: 1rem;
     width: 48%;
@@ -706,6 +847,7 @@ article.resumeRight .resumeBlock{
     align-content: center;
     align-items: center;
 }
+
 #webIdealBlock {
     border-radius: 1rem;
     background-color: black;
@@ -713,25 +855,30 @@ article.resumeRight .resumeBlock{
     height: 100%;
     padding: 2rem;
 }
-.bigText  {
+
+.bigText {
     font-size: 6rem;
     width: 100%;
     text-align: center;
 }
+
 .smallText {
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
 }
+
 #webIdealWork h3 {
     margin-bottom: 2rem;
     font-size: 2.3rem;
     font-weight: 400;
 }
+
 #webIdealWork p {
     margin-bottom: 2rem;
     font-size: 1.4rem;
 }
+
 #interestedInWork {
     background-color: black;
     border: white solid 1px;
@@ -740,7 +887,8 @@ article.resumeRight .resumeBlock{
     margin: 2rem;
     border-radius: 1rem;
 }
-#interestedInWork div{
+
+#interestedInWork div {
     width: 60%;
     margin: auto;
     display: flex;
@@ -748,7 +896,8 @@ article.resumeRight .resumeBlock{
     align-items: center;
     margin-bottom: 2rem;
 }
-#interestedInWork div a{
+
+#seeMyWork {
     width: 48%;
     background-color: white;
     border-radius: 2rem;
@@ -756,12 +905,27 @@ article.resumeRight .resumeBlock{
     padding: 1rem 2rem;
     text-align: center;
     font-size: 1.4rem;
-    color:  rgba(54,84,120,1);
+    color: rgba(54, 84, 120, 1);
 }
-#interestedInWork div a:nth-child(1){
+#seeMyWork:hover{
+    background: rgb(61, 91, 125);
+    background: linear-gradient(270deg, rgba(61, 91, 125, 1) 0%, rgba(54, 84, 120, 1) 16%, rgba(34, 61, 94, 1) 40%, rgba(15, 40, 70, 1) 78%);
     color: white;
-    background: rgb(61,91,125);
-    background: linear-gradient(270deg, rgba(61,91,125,1) 0%, rgba(54,84,120,1) 16%, rgba(34,61,94,1) 40%, rgba(15,40,70,1) 78%);
+}
+#sendMeEmail {
+    background: linear-gradient(270deg, rgba(61, 91, 125, 1) 0%, rgba(54, 84, 120, 1) 16%, rgba(34, 61, 94, 1) 40%, rgba(15, 40, 70, 1) 78%);
+    width: 48%;
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+}
+#sendMeEmail:hover {
+    color: rgba(54, 84, 120, 1);
+    background: white;
+
 }
 .blackFold::after {
     content: "";
@@ -771,24 +935,30 @@ article.resumeRight .resumeBlock{
     background-color: rgb(113, 113, 113);
     z-index: 10;
 }
+
 body.contact {
     background-color: #ECECF2;
 }
+
 #contact {
     margin: 3rem auto;
     background-color: white;
     border-radius: .5rem;
 }
+
 #contact form {
     display: flex;
     flex-direction: column;
     padding: 4rem;
 }
+
 #contact label {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
-#contact input, textarea {
+
+#contact input,
+textarea {
     background-color: #ECECF2;
     border: none;
     padding: 1rem;
@@ -796,9 +966,11 @@ body.contact {
     margin-bottom: 3rem;
     border-radius: .5rem;
 }
+
 #contact textarea {
     height: 400px;
 }
+
 #contact [type="submit"] {
     margin-top: 3rem;
     margin-bottom: 0;
@@ -808,15 +980,18 @@ body.contact {
     background-color: #5C6FB4;
     border-radius: 1rem;
     align-self: flex-end;
-    
+
 }
+
 article.work {
     display: flex;
     margin-bottom: 6rem;
 }
+
 article.work>img {
     width: 50%;
 }
+
 .rightWork {
     width: 50%;
     display: flex;
@@ -827,44 +1002,53 @@ body.blackTheme {
     background-color: #1A223E;
     color: white;
 }
+
 body.blackTheme nav {
     background-color: white;
 }
-body.blackTheme nav a{
+
+body.blackTheme nav a {
     color: black;
 }
+
 body.blackTheme #diego {
     color: black;
 }
+
 .rightWork {
     padding: 0 2rem;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 }
+
 .rightWork h3 {
     font-size: 3rem;
     color: #79A5DF;
     margin-bottom: 1rem;
 }
+
 .rightWork p {
     font-size: 1.4rem;
 }
+
 .linkWork {
     display: flex;
     margin-top: 2rem;
     align-items: center;
     justify-content: space-between;
 }
+
 .linkWork {
     display: flex;
 }
-.linkWork a{
+
+.linkWork a {
     display: flex;
     align-items: center;
 }
 
-.linkWork a:nth-child(1){
+.linkWork a:nth-child(1) {
     width: 200px;
     height: 70px;
     background-color: #4875B4;
@@ -877,9 +1061,14 @@ body.blackTheme #diego {
     font-size: 1.5rem;
     margin-right: 45%;
 }
-
-.linkWork a img{
+.linkWork a:nth-child(1):hover {
+    background-color: #334d72;
+}
+.linkWork a img {
     height: 70px;
+}
+.linkWork a img:hover{
+    scale: 120%;
 }
 .writtenWork {
     display: flex;
@@ -887,6 +1076,7 @@ body.blackTheme #diego {
     justify-content: space-between;
     margin-bottom: 5rem;
 }
+
 .writtenWork article {
     width: 45%;
 }
@@ -895,12 +1085,13 @@ body.blackTheme #diego {
     color: #79A5DF;
     height: 100px;
 }
+
 .writtenWork p {
     height: 130px;
     font-size: 1.3rem;
 }
 
-.writtenWork a{
+.writtenWork a {
     background-color: #4875B4;
     border-radius: 1rem;
     padding: .5rem 1rem;
@@ -912,6 +1103,9 @@ body.blackTheme #diego {
     color: white;
     font-size: 1.3rem;
 }
+.writtenWork a:hover {
+    background-color: #334d72;
+}
 #workBlock {
     margin-top: 3rem;
     margin-bottom: 5rem;
@@ -919,19 +1113,23 @@ body.blackTheme #diego {
     flex-flow: column wrap;
     align-content: center;
 }
-#workBlock img, #workBlock p {
+
+#workBlock img,
+#workBlock p {
     width: 80%;
     margin: auto;
     margin-bottom: 2rem;
 }
-#workBlock div{
+
+#workBlock div {
     width: 80%;
     margin: auto;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
 }
-#workBlock div a{
+
+#workBlock div a {
     width: 200px;
     padding: .8rem 1rem;
     margin-right: 1rem;
@@ -944,7 +1142,10 @@ body.blackTheme #diego {
     color: white;
     font-size: 1.2rem;
 }
-#workBlock div a img{
+#workBlock div a:hover {
+    background-color: #334d72;
+}
+#workBlock div a img {
     height: 32px;
     width: 32px;
     margin: 0;
@@ -958,135 +1159,176 @@ body.blackTheme #diego {
     header.home article {
         width: 1124px;
     }
-    #homeHeader{
+
+    #homeHeader {
         font-size: 5.8rem;
         color: #1A223E;
     }
 
-    main>section, #webPartner {
+    main>section,
+    #webPartner {
         width: 1124px;
     }
-    .bigText  {
+
+    .bigText {
         font-size: 5rem;
     }
+
     .smallText {
         font-size: 1.1rem;
     }
+
     #webIdealWork h3 {
         font-size: 1.8rem;
     }
+
     #webIdealWork p {
         font-size: 1rem;
     }
+
     #webPartner h2 {
         font-size: 2.5rem;
     }
+
     .rightWork p {
         font-size: 1.2rem;
     }
+
     .rightWork h3 {
         font-size: 2.4rem;
     }
+
     .linkWork a:nth-child(1) {
         margin-right: 30%;
         height: 50px;
         font-size: 1.3rem;
     }
-    .linkWork a img{
+
+    .linkWork a img {
         height: 50px;
     }
+
     .writtenWork h3 {
         font-size: 1.8rem;
         height: 100px;
     }
+
     .writtenWork p {
         height: 100px;
         font-size: 1rem;
     }
 }
+
 @media screen and (max-width: 1300px) {
     header.home article {
         width: 924px;
     }
-    #homeHeader{
+
+    #homeHeader {
         font-size: 5.8rem;
     }
 
-    main>section, #webPartner {
+    main>section,
+    #webPartner {
         width: 924px;
     }
+
     #mailArticle a {
         margin-left: 1rem;
     }
-    nav ul a.homeNav{
+
+    nav ul a.homeNav {
         font-size: 1.1rem;
     }
-    #diegoHidalgo{
+
+    #diegoHidalgo {
         margin-right: 10%;
     }
-    #homeHeader{
+
+    #homeHeader {
         font-size: 4rem;
     }
+
     #hey {
         font-size: 1.5rem;
     }
+
     div.empty {
         display: none;
     }
+
     #mailArticle #resumeContact {
         margin-left: 1rem;
+        font-size: 1.1rem;
+        padding: 0;
     }
+
     article.blockOfCarousell {
         width: 450px;
     }
+
     #carousell {
         width: 250%;
     }
+
     #ContactMeButton {
         padding: 0.5rem;
         font-size: 1.1rem;
     }
-    .bigText  {
+
+    .bigText {
         font-size: 3rem;
     }
+
     .smallText {
         font-size: 1rem;
     }
+
     #webIdealWork h3 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
+
     #webIdealWork p {
         font-size: .9rem;
         margin-bottom: 1rem;
     }
+
     #webPartner h2 {
         font-size: 2.5rem;
     }
+
     .fourBloks {
         padding: 1rem;
     }
-    #interestedInWork div a{
+
+    #interestedInWork div a {
         font-size: 1.3rem;
     }
+
     .rightWork p {
         font-size: .9rem;
     }
+
     .rightWork h3 {
         font-size: 2rem;
     }
+
     .linkWork a:nth-child(1) {
         margin-right: 15%;
     }
-    .linkWork{
+
+    .linkWork {
         margin-top: 1rem;
     }
+
     .writtenWork h3 {
         font-size: 1.6rem;
         height: 100px;
     }
+
     .writtenWork p {
         height: 100px;
         font-size: 1rem;
     }
-}    
+}
