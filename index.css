@@ -219,10 +219,27 @@ main>section,
     overflow: hidden;
 }
 
-.carousel-inner {
+#carousel-inner {
     display: flex;
-    width: 200%;
+    gap: 60px;
+    width: fit-content;
     justify-content: space-between;
+}
+.animation {
+    animation: move 1s linear;
+}
+@keyframes move {
+    from {
+        transform: translateX(0%);
+      }
+    to {
+        transform: translate(-540px);
+    }
+}
+@keyframes move2 {
+    to {
+        transform: translate(calc(-10%));
+    }
 }
 
 article.blockOfCarousell {
@@ -1273,7 +1290,7 @@ body.blackTheme #diego {
         width: 450px;
     }
 
-    .carousel-inner {
+    #carousel-inner {
         width: 250%;
     }
 
