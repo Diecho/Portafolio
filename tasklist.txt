@@ -1,0 +1,10 @@
+task list
+
+update images of me (index, about me, resume) maybe two different images for the about me
+do the javascript carousel
+do scrolling animations
+mobile friendly 
+tablet friendly
+add some animations to make the website more dynamic :D (think in what to do)
+
+something more ????

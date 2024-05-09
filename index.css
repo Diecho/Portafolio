@@ -973,7 +973,7 @@ textarea {
 }
 
 #contact [type="submit"] {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 0;
     font-size: 1.3rem;
     width: 200px;
@@ -983,7 +983,10 @@ textarea {
     align-self: flex-end;
 
 }
-
+#result {
+    margin-top: 2rem;
+    text-align: end;
+}
 article.work {
     display: flex;
     margin-bottom: 6rem;
@@ -1153,6 +1156,7 @@ body.blackTheme #diego {
     margin: 0;
     margin-right: 1rem;
 }
+
 
 /* add hovers for all buttons and things */
 
