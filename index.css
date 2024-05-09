@@ -264,6 +264,7 @@ article.blockOfCarousell a:hover {
 article.blockOfCarousell img {
     width: 100%;
     object-fit: cover;
+    aspect-ratio: 17/9;
 }
 
 article.blockOfCarousell p {
@@ -988,7 +989,7 @@ article.work {
     margin-bottom: 6rem;
 }
 
-article.work>img {
+article.work>img, article.work>video{
     width: 50%;
 }
 
@@ -1115,7 +1116,8 @@ body.blackTheme #diego {
 }
 
 #workBlock img,
-#workBlock p {
+#workBlock p,
+#workBlock video {
     width: 80%;
     margin: auto;
     margin-bottom: 2rem;
