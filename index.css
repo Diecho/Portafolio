@@ -219,7 +219,7 @@ main>section,
     overflow: hidden;
 }
 
-#carousell {
+.carousel-inner {
     display: flex;
     width: 200%;
     justify-content: space-between;
@@ -1273,7 +1273,7 @@ body.blackTheme #diego {
         width: 450px;
     }
 
-    #carousell {
+    .carousel-inner {
         width: 250%;
     }
 

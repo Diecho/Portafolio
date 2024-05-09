@@ -5,6 +5,7 @@ do the javascript carousel
 do scrolling animations
 mobile friendly 
 tablet friendly
+loading images and content before start
 add some animations to make the website more dynamic :D (think in what to do)
 
 something more ????
