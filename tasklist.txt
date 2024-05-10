@@ -1,11 +1,18 @@
 task list
 
 update images of me (index, about me, resume) maybe two different images for the about me
-do the javascript carousel
 do scrolling animations
 mobile friendly 
 tablet friendly
 loading images and content before start
+mobile menu
 add some animations to make the website more dynamic :D (think in what to do)
 
 something more ????
+
+
+
+
+done
+
+do the javascript carousel
