@@ -199,8 +199,8 @@ main>section,
     margin: auto;
     /* animation: slideToLeft ease;
     animation-timeline: view();
-    animation-range: cover contain; */
-    /* change animation */
+    animation-range: cover contain;  */
+     /* change animation */
 }
 
 @keyframes slideToLeft {
@@ -218,16 +218,20 @@ main>section,
 #myProjects {
     overflow: hidden;
 }
+
 #carousel {
     position: relative;
 }
+
 #carousel-inner {
     display: flex;
     gap: 200px;
     width: fit-content;
     justify-content: space-between;
 }
-#prevButton, #nextButton{
+
+#prevButton,
+#nextButton {
     position: absolute;
     top: 50%;
     background-color: rgba(112, 112, 112, 0.175);
@@ -237,11 +241,14 @@ main>section,
     border-radius: 1rem;
     rotate: 180deg;
 }
+
 #nextButton {
     right: 0;
     rotate: 0deg;
 }
-#prevButton img, #nextButton img{
+
+#prevButton img,
+#nextButton img {
     height: 48px;
 }
 
@@ -358,10 +365,12 @@ div.skillBlock p {
     text-decoration: none;
     font-size: 1.5rem;
 }
+
 #social a:hover {
     background-color: #337fdc;
     border: #337fdc 2px solid;
 }
+
 #social img {
     height: 80%;
     object-fit: cover;
@@ -401,10 +410,12 @@ div.skillBlock p {
     box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
 
 }
-#mailArticle a:hover{
+
+#mailArticle a:hover {
     background-color: #3d82d6;
     border: #3d82d6 2px solid;
 }
+
 #mailArticle a img {
     height: 70%;
     object-fit: cover;
@@ -477,9 +488,11 @@ footer a {
 footer img {
     height: 50px;
 }
+
 footer img:hover {
     scale: 120%;
 }
+
 footer hr {
     margin-top: 3rem;
     width: 100%;
@@ -494,7 +507,8 @@ footer>p {
     text-align: center;
     width: 100%;
 }
-#leftFooter p{
+
+#leftFooter p {
     margin-top: .5rem;
     margin-right: 2rem;
 }
@@ -690,11 +704,13 @@ article.resumeBlock.resumeRight {
     text-align: center;
     border: #5C6FB4 3px solid;
 }
-#seePDF:hover{
+
+#seePDF:hover {
     background-color: white;
     color: #5C6FB4;
     border: #5C6FB4 3px solid;
 }
+
 /* about me css */
 
 #whoAmI {
@@ -933,11 +949,13 @@ article.resumeBlock.resumeRight {
     font-size: 1.4rem;
     color: rgba(54, 84, 120, 1);
 }
-#seeMyWork:hover{
+
+#seeMyWork:hover {
     background: rgb(61, 91, 125);
     background: linear-gradient(270deg, rgba(61, 91, 125, 1) 0%, rgba(54, 84, 120, 1) 16%, rgba(34, 61, 94, 1) 40%, rgba(15, 40, 70, 1) 78%);
     color: white;
 }
+
 #sendMeEmail {
     background: linear-gradient(270deg, rgba(61, 91, 125, 1) 0%, rgba(54, 84, 120, 1) 16%, rgba(34, 61, 94, 1) 40%, rgba(15, 40, 70, 1) 78%);
     width: 48%;
@@ -948,11 +966,13 @@ article.resumeBlock.resumeRight {
     font-size: 1.4rem;
     color: white;
 }
+
 #sendMeEmail:hover {
     color: rgba(54, 84, 120, 1);
     background: white;
 
 }
+
 .blackFold::after {
     content: "";
     width: 100%;
@@ -996,11 +1016,13 @@ textarea {
 #contact textarea {
     height: 400px;
 }
+
 .carouselContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #contact [type="submit"] {
     margin-top: 1rem;
     margin-bottom: 0;
@@ -1012,16 +1034,19 @@ textarea {
     align-self: flex-end;
 
 }
+
 #result {
     margin-top: 2rem;
     text-align: end;
 }
+
 article.work {
     display: flex;
     margin-bottom: 6rem;
 }
 
-article.work>img, article.work>video{
+article.work>img,
+article.work>video {
     width: 50%;
 }
 
@@ -1094,15 +1119,19 @@ body.blackTheme #diego {
     font-size: 1.5rem;
     margin-right: 45%;
 }
+
 .linkWork a:nth-child(1):hover {
     background-color: #334d72;
 }
+
 .linkWork a img {
     height: 70px;
 }
-.linkWork a img:hover{
+
+.linkWork a img:hover {
     scale: 120%;
 }
+
 .writtenWork {
     display: flex;
     flex-flow: row wrap;
@@ -1113,6 +1142,7 @@ body.blackTheme #diego {
 .writtenWork article {
     width: 45%;
 }
+
 .writtenWork h3 {
     font-size: 1.8rem;
     color: #79A5DF;
@@ -1136,9 +1166,11 @@ body.blackTheme #diego {
     color: white;
     font-size: 1.3rem;
 }
+
 .writtenWork a:hover {
     background-color: #334d72;
 }
+
 #workBlock {
     margin-top: 3rem;
     margin-bottom: 5rem;
@@ -1176,9 +1208,11 @@ body.blackTheme #diego {
     color: white;
     font-size: 1.2rem;
 }
+
 #workBlock div a:hover {
     background-color: #334d72;
 }
+
 #workBlock div a img {
     height: 32px;
     width: 32px;
@@ -1252,6 +1286,7 @@ body.blackTheme #diego {
         height: 100px;
         font-size: 1rem;
     }
+
     #carousel-inner {
         gap: 60px;
     }
@@ -1367,6 +1402,32 @@ body.blackTheme #diego {
         height: 100px;
         font-size: 1rem;
     }
+
+    #whoAmI p {
+        font-size: 1.07rem;
+    }
+
+    #whoAmIImg img {}
+
+    #whoAmIText p {
+        margin: 0;
+    }
+
+    #whoAmIText p:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+
+    #whoAmIText {
+        width: 50%;
+    }
+
+    #whoAmIImg {
+        width: 50%;
+    }
+
+    #whoAmI>p {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1375,42 +1436,178 @@ body.blackTheme #diego {
         text-align: start;
         margin-top: 0;
     }
+
     main>section,
     #webPartner,
     header.home article {
         width: 700px;
     }
+
     header.home article {
         flex-flow: row wrap;
     }
+
     #header p {
         margin-top: 1rem;
     }
+
     header.home a {
         padding: 1rem 2rem;
     }
+
     nav ul {
         /* display: none; */
     }
-    #skill, #social {
+
+    #skill,
+    #social {
         width: 100%;
     }
+
     #skillsSocial {
         margin-bottom: 0;
     }
+
     #mailArticle {
         flex-flow: row wrap;
     }
-    #mailArticle p{
+
+    #mailArticle p {
         padding: .5rem 4rem;
     }
+
     #mailArticle #resumeContact {
         margin: auto;
         margin-top: 1.5rem;
         max-width: none;
         font-size: 1.4rem;
     }
+
     #myHobbies article p {
         width: 80%;
     }
+
+    #whoAmIImg img {
+        width: 100%;
+        aspect-ratio: 4 /3;
+    }
+
+    #whoAmIImg {
+        width: 45%;
+    }
+
+    #whoAmI p {
+        font-size: 0.99rem;
+    }
+    #whoAmI>p,
+    #whoAmIText p:nth-child(1) {
+        margin: 0;
+    }
+    #whoAmI #margins {
+        margin: 1rem 0;
+    }
+    #whoAmILinks a {
+        width: 250px;
+        font-size: 1.3rem;
+    }
+    .rightWork h3 {
+        font-size: 1.8rem;
+    }
+
+    .linkWork a:nth-child(1){
+        margin-right: 35%;
+    }
+    article.work>img, article.work>video{
+        aspect-ratio: 17/9;
+        object-fit: contain;
+        width: 80%;
+        margin: auto    ;
+    }
+    article.work {
+        display: flex;
+        flex-flow: column;
+    }
+    .rightWork {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+    .writtenWork article{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    #contact form {
+        padding: 3rem;
+    }
+    .bigText{
+        font-size: 2rem;
+    }
+    #webIdealWork h3 {
+        font-size: 1rem;
+    }
+    #webIdealWork p {
+        font-size: .7rem;
+    } 
+    #webIdealBlock {
+        padding: 1rem;
+    }
+    #blocks, #webIdealWork {
+        padding: 1rem;
+        width: 49%;
+    }
+    #interestedInWork{
+        margin: 1rem;;
+    }
+    #webPartner h2 {
+        font-size: 1.5rem;
+    }
+    #interestedInWork div {
+        width: 80%;
+    }
+    #seeMyWork, #sendMeEmail{
+        padding: .65rem 2rem;
+    }
+    #header #hey {
+        margin: 0;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    #homeHeader {
+        font-size: 3.65rem;
+        text-align: start;
+        margin-top: 0;
+    }
+
+    main>section,
+    #webPartner,
+    header.home article {
+        width: 340px;
+    }
+    nav ul {
+        display: none;
+    }
+    #mailArticle p {
+        padding: .5rem 2rem;
+        font-size: 1.1rem;
+    }
+    #homeHeader {
+        font-size: 2.5rem;
+    }
+    #headerRight img {
+        height: 152px;
+    }
+    #header #hey {
+        font-size: 1.3rem;
+    }
+    #header p {
+        font-size: 0.8rem;
+    }
+    #headerRight{
+        height: fit-content;
+    }
+    /* #headerLeft {
+        width: 100%;
+    } */
 }
