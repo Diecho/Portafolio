@@ -20,9 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
         times = 2400;
         dif = 600;
     }
-    else if(screen.width > 0){
+    else if(screen.width > 1000){
         times = 2040;
         dif = 510;
+    }
+    else if(screen.width > 600){
+        times = 3040;
+        dif = 760;
+    }
+    
+    else if(screen.width > 0){
+        times = 1600;
+        dif = 400;
     }
     let moving = false;
     let cleaning = 0;

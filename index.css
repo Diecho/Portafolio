@@ -1442,7 +1442,10 @@ body.blackTheme #diego {
     header.home article {
         width: 700px;
     }
-
+    article.blockOfCarousell {
+        width: 700px;
+        height: 630px;
+    }
     header.home article {
         flex-flow: row wrap;
     }
@@ -1515,12 +1518,12 @@ body.blackTheme #diego {
     }
 
     .linkWork a:nth-child(1){
-        margin-right: 35%;
+        margin-right: 50%;
     }
     article.work>img, article.work>video{
-        aspect-ratio: 17/9;
+        /* aspect-ratio: 17/9; */
         object-fit: contain;
-        width: 80%;
+        width: 100%;
         margin: auto    ;
     }
     article.work {
@@ -1528,12 +1531,12 @@ body.blackTheme #diego {
         flex-flow: column;
     }
     .rightWork {
-        width: 80%;
+        width: 100%;
         margin: auto;
         padding: 0;
     }
     .writtenWork article{
-        width: 80%;
+        width: 100%;
         margin: auto;
         margin-bottom: 2rem;
     }
@@ -1571,6 +1574,19 @@ body.blackTheme #diego {
     #header #hey {
         margin: 0;
     }
+    #resume {
+        width: calc(850px *0.9);
+    }
+    #resumeHeader img {
+        right:1rem;
+    }
+    .writtenWork p,.writtenWork h3 {
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+    #workBlock img, #workBlock p, #workBlock video,#workBlock div {
+        width: 100%;
+    }
 
 }
 @media screen and (max-width: 600px) {
@@ -1607,7 +1623,203 @@ body.blackTheme #diego {
     #headerRight{
         height: fit-content;
     }
-    /* #headerLeft {
+
+    article.blockOfCarousell {
+        width: 340px;
+        height: 524px;
+    }
+    article.blockOfCarousell p,article.blockOfCarousell h3 {
+        margin-top: .5rem;
+    }
+    #skillsSocial {
+        margin-top: 3rem;
+    }
+
+
+    div.skillBlock {
+        height: 40px;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+        margin-right: .5rem;
+        box-shadow: 5px 5px 12px -10px rgba(0, 0, 0, 0.75);
+
+    }
+    div.skillBlock p {
+        font-size: 1rem;
+    }
+    div.skillBlock img {
+        height: 16px;
+    }
+    #social a {
+        height: 40px;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        box-shadow: 5px 5px 12px -10px rgba(0, 0, 0, 0.75);
+    }
+    #social img {
+        height: 20px; 
+    }
+    #mailArticle a {
+        height: 40px;
+        margin: 0;
+        box-shadow: 5px 5px 12px -10px rgba(0, 0, 0, 0.75);
+        margin-top: 1rem;
+        margin-right: .5rem;
+    }
+    #mailArticle p {
+        padding: .5rem 1rem;
+        height: 56px;
         width: 100%;
-    } */
+        box-shadow: 5px 5px 12px -10px rgba(0, 0, 0, 0.75);
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mailSection {
+        margin-bottom: 5rem;
+    }
+    #mailArticle #resumeContact {
+        flex-grow: 0;
+        font-size: 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+    #mailArticle {
+        justify-content: center;
+    }
+    footer {
+        padding: 1.5rem;
+    }
+    #leftFooter p {
+        font-size: .9rem;
+    }
+    footer img {
+        height: 32px;
+    }
+    footer a {
+        width: 30px;
+    }
+    #whoAmIText, #whoAmIImg {
+        width: 100%;
+    }
+    #whoAmI>p, #whoAmIText p:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+    #whoAmILinks {
+        flex-flow: column;
+    } 
+    #whoAmILinks a:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+    #myHobbies article {
+        width: 100%;
+    }
+    .whatIdoBlock {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #webBlock {
+        flex-flow: row wrap;
+    }
+    #blocks, #webIdealWork {
+        width: 100%;
+    }
+    #interestedInWork div {
+        display: flex;
+        flex-flow: column;
+    }
+    #sendMeEmail, #seeMyWork{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    #interestedInWork div a {
+        font-size: 1rem;
+    }
+    #webPartner h2 {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    #resume {
+        width: calc(850px *0.4);
+        padding: .5rem;
+    }
+    #resumeHeader img {
+        right:1rem;
+        height: 96px;
+        top: 40px;
+    }
+    #resumeMain {
+        padding: .5rem 1rem;
+    }
+    #resumeHeader {
+        padding: 1rem;
+        height: 100px;
+        margin-bottom: 2rem;
+    }
+    #resumeHeader h2 {
+        font-size: 1.3rem;
+    }
+    #resumeSocial, article.resumeLeft .resumeBlock{
+        padding: .5rem 1rem .5rem 0;
+    }
+    article.resumeBlock.resumeRight, article.resumeRight .resumeBlock{
+        padding: .5rem 0 .5rem 1rem;
+    }
+    #resumeMain h3 {
+        font-size: .75rem;
+        margin-bottom: .5rem;
+        letter-spacing: 2px;
+    }
+    #resumeMain p,#resumeMain ul{
+        font-size: .5rem;
+    }
+    #resumeMain h4{
+        font-size: .6rem;
+    }
+    #resumeHeader p {
+        font-size: 0.9rem;
+    }
+    #resumeMain img {
+        width: 12px;
+        height: 12px;
+    }
+    .resumeRight, .resumeLeft {
+        width: 50%;
+    }
+    #resumeMain ul{
+        margin: .25rem 0;
+    }
+    #contact form {
+        padding: 1.5rem;
+    }
+    #contact input, textarea {
+        margin-bottom: 1.5rem;
+    }
+    .linkWork a:nth-child(1) {
+        margin-right: 2rem;
+    }
+    .linkWork a img {
+        margin-left: .5rem;
+    }
+    .rightWork h3 {
+        margin: 0;
+    }
+    #workBlock p {
+        font-size: .9rem;
+    }
+    #workBlock img, #workBlock p, #workBlock video {
+        margin-bottom: 1rem;
+    }
+    #workBlock div {
+        flex-flow: row wrap;
+    }
+    #workBlock div a {
+        width: 100%;;
+        font-size: 1rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
 }
