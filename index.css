@@ -8,6 +8,37 @@
     font-family: "Poppins", sans-serif;
 }
 
+.displayNone{
+    display: none !important; 
+}
+aside {
+    background-color: #1A223E;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+}
+aside ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+aside .asideItem {
+    padding: 1rem 0;
+    list-style: none;
+}
+aside .asideItem a {
+    color: white;
+    text-decoration: none;
+    width: 200px;
+    font-size: 2rem;
+}
+.blackTheme aside {
+    background-color: white;
+}
+.blackTheme aside .asideItem a {
+    color: rgb(0, 0, 0);
+}
 nav {
     background-color: #1A223E;
     color: white;
@@ -83,6 +114,14 @@ nav ul a:hover::after {
 #ContactMeButton:hover {
     background-color: #3376c8;
 }
+nav>img {
+    height: 64px;
+    display: none;
+    fill: white;
+    color: white;
+}
+
+
 
 .skillBlock {
     border: 1px solid;
@@ -1406,9 +1445,6 @@ body.blackTheme #diego {
     #whoAmI p {
         font-size: 1.07rem;
     }
-
-    #whoAmIImg img {}
-
     #whoAmIText p {
         margin: 0;
     }
@@ -1431,6 +1467,16 @@ body.blackTheme #diego {
 }
 
 @media screen and (max-width: 1000px) {
+    nav {
+        justify-content: flex-end;
+    }
+    nav>img {
+        display: block;
+        margin-right: 1rem;
+    }
+    nav>ul {
+        display: none;
+    }
     #homeHeader {
         font-size: 3.65rem;
         text-align: start;
