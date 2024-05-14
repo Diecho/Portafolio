@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <h1 id="homeHeader">Diego Hidalgo</h1>
     </div>
     <div id="headerRight">
-        <img src="https://placehold.co/250x250" alt="Diego Hidalgo's photo">
+        <img src="images/diego.jpg" alt="Diego Hidalgo's photo">
     </div>
     <p>A college student in software engineering willing to create, explore and learn about web development
     and software. I’m passionate about applying mathematics and to apply logic to any type of problem

@@ -190,8 +190,10 @@ header.home article {
 }
 
 #headerRight img {
-    height: 100%;
+    height: 331px;
     border-radius: 50%;
+    width: 331px;
+    object-fit: cover;
 }
 
 #homeHeader {
@@ -767,6 +769,7 @@ article.resumeBlock.resumeRight {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 #whoAmIText p {
@@ -774,8 +777,10 @@ article.resumeBlock.resumeRight {
 }
 
 #whoAmIImg img {
-    height: 100%;
+    width: 100%;
     margin-left: 2rem;
+    object-fit: cover;
+    aspect-ratio: 5 / 3;
 }
 
 #whoAmILinks {
@@ -1329,6 +1334,9 @@ body.blackTheme #diego {
     #carousel-inner {
         gap: 60px;
     }
+    #whoAmI p {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -1464,13 +1472,14 @@ body.blackTheme #diego {
     #whoAmI>p {
         margin-top: 1rem;
     }
-    #whoAmIText p {
-        font-size: 1.2rem;
-        background-color: #1A223E;
-    }
+
 }
 
 @media screen and (max-width: 1000px) {
+    #headerRight img{
+        width: 250px;
+        height: 250px;
+    }
     nav {
         justify-content: flex-start;
     }
@@ -1542,7 +1551,7 @@ body.blackTheme #diego {
 
     #whoAmIImg img {
         width: 100%;
-        aspect-ratio: 4 /3;
+        aspect-ratio: 4 / 3;
     }
 
     #whoAmIImg {
@@ -1667,6 +1676,7 @@ body.blackTheme #diego {
     }
     #headerRight img {
         height: 152px;
+        width: 152px;
     }
     #header #hey {
         font-size: 1.3rem;
