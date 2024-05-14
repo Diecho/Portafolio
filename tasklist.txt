@@ -1,11 +1,10 @@
 task list
 
 update images of me (index, about me, resume) maybe two different images for the about me
+update images for my work
 do scrolling animations
-mobile friendly 
-tablet friendly
+tablet friendly check ipad pro and air
 loading images and content before start
-mobile menu
 add some animations to make the website more dynamic :D (think in what to do)
 
 something more ????
@@ -14,5 +13,6 @@ something more ????
 
 
 done
-
+mobile friendly
+mobile menu
 do the javascript carousel

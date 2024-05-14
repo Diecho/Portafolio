@@ -1468,11 +1468,11 @@ body.blackTheme #diego {
 
 @media screen and (max-width: 1000px) {
     nav {
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
     nav>img {
         display: block;
-        margin-right: 1rem;
+        margin-left: 1rem;
     }
     nav>ul {
         display: none;
@@ -1636,6 +1636,10 @@ body.blackTheme #diego {
 
 }
 @media screen and (max-width: 600px) {
+    main section>h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
     #homeHeader {
         font-size: 3.65rem;
         text-align: start;
