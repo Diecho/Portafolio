@@ -1464,6 +1464,10 @@ body.blackTheme #diego {
     #whoAmI>p {
         margin-top: 1rem;
     }
+    #whoAmIText p {
+        font-size: 1.2rem;
+        background-color: #1A223E;
+    }
 }
 
 @media screen and (max-width: 1000px) {

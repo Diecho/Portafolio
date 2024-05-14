@@ -1,7 +1,6 @@
 task list
 
 update images of me (index, about me, resume) maybe two different images for the about me
-update images for my work
 do scrolling animations
 tablet friendly check ipad pro and air
 loading images and content before start
