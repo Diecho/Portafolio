@@ -10,19 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     let times = 2400;
     let dif = 0;
-    console.log(screen.width)
     if(screen.width > 1624){
         console.log(screen.width)
-        dif = 740;
-        times = 2960;
+        dif = 501.3;
+        times = 2005.33333333;
 
-    }else if(screen.width > 1300){
-        times = 2400;
-        dif = 600;
+    }
+    else if(screen.width > 1300){
+        times = 2408;
+        dif = 602;
     }
     else if(screen.width > 1000){
-        times = 2040;
-        dif = 510;
+        times = 2008;
+        dif = 502;
     }
     else if(screen.width > 600){
         times = 3040;

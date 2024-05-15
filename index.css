@@ -90,7 +90,8 @@ nav ul a:hover::after {
 #diegoHidalgo {
     display: flex;
     margin-right: 20%;
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
 }
 
 #diego {
@@ -194,6 +195,7 @@ header.home article {
     border-radius: 50%;
     width: 331px;
     object-fit: cover;
+    filter: contrast(120%) brightness(130%);
 }
 
 #homeHeader {
@@ -266,7 +268,7 @@ main>section,
 
 #carousel-inner {
     display: flex;
-    gap: 200px;
+    gap: 80px;
     width: fit-content;
     justify-content: space-between;
 }
@@ -294,7 +296,7 @@ main>section,
 }
 
 article.blockOfCarousell {
-    width: 540px;
+    width: 421.3px;
     background-color: #1A223E;
     color: white;
     display: flex;
@@ -609,6 +611,7 @@ h1::after {
     right: 4rem;
     border-radius: 50%;
     top: 80px;
+    height: 160px;
 }
 
 #resumeHeader h2 {
@@ -1331,12 +1334,14 @@ body.blackTheme #diego {
         font-size: 1rem;
     }
 
-    #carousel-inner {
-        gap: 60px;
-    }
+
     #whoAmI p {
         font-size: 1.2rem;
     }
+    article.blockOfCarousell {
+        width: 522px;
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -1384,7 +1389,7 @@ body.blackTheme #diego {
     }
 
     article.blockOfCarousell {
-        width: 450px;
+        width: 422px;
     }
 
 
@@ -1504,6 +1509,9 @@ body.blackTheme #diego {
     article.blockOfCarousell {
         width: 700px;
         height: 630px;
+    }
+    #carousel-inner{
+        gap: 60px;
     }
     header.home article {
         flex-flow: row wrap;
@@ -1812,19 +1820,19 @@ body.blackTheme #diego {
     }
     #resumeHeader img {
         right:1rem;
-        height: 96px;
-        top: 40px;
+        height: 76px;
+        top: 50px;
     }
     #resumeMain {
         padding: .5rem 1rem;
     }
     #resumeHeader {
-        padding: 1rem;
+        padding: 2rem 1rem;
         height: 100px;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     #resumeHeader h2 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     #resumeSocial, article.resumeLeft .resumeBlock{
         padding: .5rem 1rem .5rem 0;
@@ -1844,7 +1852,7 @@ body.blackTheme #diego {
         font-size: .6rem;
     }
     #resumeHeader p {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
     #resumeMain img {
         width: 12px;
